@@ -1,0 +1,44 @@
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Create  ICS file</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  </head>
+
+
+<script src="script.js"> </script>
+
+<h3 class="card-title">
+    Create an iCS event link.
+</h3>
+<div class="form-group">
+    <form name="myForm" method="post">
+        <label  class="col-2 col-form-label">Event Name:</label>
+        <div class="col-5">
+            <input class="form-control" type="text" placeholder="Enter Event Name" id="event_name" name = "event_name"/>
+        </div>
+        <label for="example-datetime-local-input" class="col-2 col-form-label">Start Date and Time</label>
+        <div class="col-5">
+            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="event_start" name = "event_start"/>
+        </div>
+        <label for="example-datetime-local-input" class="col-2 col-form-label">End Date and Time</label>
+        <div class="col-5">
+            <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="event_end"  name = "event_end"/>
+        </div>
+        <label  class="col-2 col-form-label">Location:</label>
+        <div class="col-5">
+            <input class="form-control" type="text" placeholder="Enter Location" id="event_location" name = "event_location"/>
+        </div>
+        <label class="col-2 col-form-label" for="textarea" >Description:</label>
+        <div class="col-lg-5 col-md-9 col-sm-12">
+            <textarea class="form-control" rows="4" name = "event_description" id = "event_description"></textarea>
+        </div> 
+        <div class="col-5 col-form-label">
+            <button type="submit" class="btn btn-success mr-2" name="my_form_submit" onclick="submit_form();">Submit</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
+            <br><br>
+            <a class="download hide" id="downloadLink" download="event.ics" style="display: none;text-align:center;">⇩ Download</a>
+            <button type="button" class="btn btn-success btn-md btn-block" style="display: none;text-align:center;" id="download_Link" download="event.ics" >Click to Copy Event Link</button>
+        </div>
+    </form>
+</div>
