@@ -42,7 +42,9 @@ function insertFileData(){
     'LOCATION:' + 
     IcsEventData.event_location +
     "\n" +
-    "SUMMARY:\n" +
+    "SUMMARY;LANGUAGE=en-ca:" +
+    IcsEventData.event_name + 
+    "\n" +
      "DESCRIPTION:" +
     IcsEventData.event_description +
     "\n" +
